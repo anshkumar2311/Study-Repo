@@ -84,4 +84,9 @@
 
 //Q4 Write a program that reverses all the elements of an array
 
-
+let numArr = [50, 20, 58, 85, 69, 96, 35, 25, 12, 7, 23, 30, 8, 1];
+let nameArr = ["ansh","vansh","kansh","sansh","tansh"];
+const arrLen = numArr.length;
+const namLen = nameArr.length;
+for (let i = 0; i<=arrLen; i++){
+}
