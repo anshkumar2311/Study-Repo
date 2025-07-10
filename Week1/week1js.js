@@ -50,43 +50,74 @@
 //Array and Object
 
 //Q1 Write a program prints all the even numbers in an array
-
-//let numArr = [50, 20, 58, 85, 69, 96, 35, 25, 12, 7, 23, 30, 8, 1]
-//const arrLen = numArr.length;
-//let count = 0;
-//let evenArr = []
-//for (let i = 0; i<=arrLen; i++){
-//  if(numArr[i]%2==0){
-//    evenArr += numArr[i] + ' ';
-//    count++;
-//  }
-//}
-//console.log(evenArr);
-//console.log(count);
+// const num = [2,10,52,55,87,69,96,100];
+// const evenNum = []
+// const lenNum = num.length;
+// for (let i=0;i<=lenNum;i++){
+//   if(num[i]%2==0){
+//     evenNum.push(num[i])
+//   }
+// }
+// console.log(evenNum.join(","));
+// console.log(evenNum.length);
 
 
-//Q2 Write a program to print the biggest number in an arrya
-
-//let numArr = [50, 20, 58, 85, 69, 96, 35, 25, 12, 7, 23, 30, 8, 1]
-//const arrLen = numArr.length;
-//let bigNum = numArr[0]
-//for (let i = 0; i<=arrLen; i++){
-//  if(bigNum<numArr[i]){
-//    bigNum = numArr[i];
-//  }
-//}
-//console.log(bigNum);
 
 
-//Q3 Write a program that prints all the male people’s rst name given a complex object
+//Q2 Write a program to print the biggest number in an array
+// const num = [3,56,87,52,45,96,14];
+// let bigNum = num[0];
+// const lenNum = num.length;
+// for(let i =0;i<=lenNum;i++){
+//   if(num[i]>bigNum){
+//     bigNum=num[i];
+//   }
+// }
+// console.log(bigNum);
+
+
+
+
+//Q3 Write a program that prints all the male people’s rst name given a complex Object
+// const userObj=[{
+//   "fname":"Ansh",
+//   "gender":"male"
+// },{
+//   "fname":"Pinki",
+//   "gender":"female"
+// },{
+//   "fname":"Vansh",
+//   "gender":"male"
+// }];
+// const objLen = userObj.length;
+// for(let i=0;i<objLen;i++){
+//   if(userObj[i]["gender"] == "male"){
+//     console.log(userObj[i].fname);
+//   }
+// }
+
 
 
 
 //Q4 Write a program that reverses all the elements of an array
+// const num = [10,20,30,40,50,60];
+// let lenNum = num.length;
+// const revNum = [];
+// for (let i=lenNum-1;i>=0;i--){
+//   revNum.push(num[i])
+// }
+// console.log(revNum);
 
-let numArr = [50, 20, 58, 85, 69, 96, 35, 25, 12, 7, 23, 30, 8, 1];
-let nameArr = ["ansh","vansh","kansh","sansh","tansh"];
-const arrLen = numArr.length;
-const namLen = nameArr.length;
-for (let i = 0; i<=arrLen; i++){
+
+
+//Q5 Write a program to remove duplicacy from array
+const num = [10,20,10,42,52,42,63,85,85]
+const lenNum = num.length;
+const dupNum = [];
+for(let i = 0; i<lenNum;i++){
+  if(!dupNum.includes(num[i])){
+    dupNum.push(num[i])
+  }
 }
+console.log(dupNum)
+
