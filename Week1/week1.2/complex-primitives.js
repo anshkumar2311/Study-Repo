@@ -1,51 +1,3 @@
-// Simple primitives 
-// normal syntax if-else loop
-
-// Q1 Write the program to greet a person given their rst and last name
-
-//let fname = `Ansh`;
-//let lname = `Kumar`;
-//console.log(`Hei I am ${fname} ${lname} call me ${fname[0]}${lname[0]}`)
-
-
-
-//Q2 Write a program that greets a person based on their gender. (If else)
-
-//let fname = `Ansh`;
-//let lname = `Kumar`;
-//let isMale = true;
-//if (isMale){
-//  console.log(`Hei boy ${fname}`)
-//}
-//else{
-//  console.log(`Hei girl ${fname}`)
-//}
-
-
-//Q3 Write a program that counts from 0 - 100 and prints (for loop)
-
-//let count = 0;
-//let sum = 0;
-//let mulFive = 0;
-//let allNum = '';
-//for (let i = 0; i<=100;i++){
-//  allNum += i + ', ';
-//  count++;
-//  sum+=i;
-//  if (i%5==0){
-//    mulFive++;
-//  }
-//}
-//console.log(allNum);
-//console.log(count);
-//console.log(sum);
-//console.log(mulFive);
-
-
-
-
-
-
 //Complex primitives
 //Array and Object
 
@@ -111,13 +63,21 @@
 
 
 //Q5 Write a program to remove duplicacy from array
-const num = [10,20,10,42,52,42,63,85,85]
-const lenNum = num.length;
-const dupNum = [];
-for(let i = 0; i<lenNum;i++){
-  if(!dupNum.includes(num[i])){
-    dupNum.push(num[i])
-  }
-}
-console.log(dupNum)
+// const num = [10,20,10,42,52,42,63,85,85]
+// const lenNum = num.length;
+// const dupNum = [];
+// for(let i = 0; i<lenNum;i++){
+//   if(!dupNum.includes(num[i])){          //includes used for checking whether no is present in that array or not..
+//     dupNum.push(num[i])
+//   }
+// }
+// console.log(dupNum)
 
+
+
+
+//Q6 sort in assending order
+const num = [25,63,12,98,65,45,50,69,36,2,6]
+const lenNum = num.length
+const ascNum = num.slice().sort((a,b)=>a-b)   //slice use kr rhe hai num ko ascNum mai duplicate copy krne ke liye     sort agar ham sort() khali use krte hai to vo normal sort krte hai [10,3,2] => [10,2,3] yeh hoga yeh hme string mai islia hme sort((a,b)=>a-b) use krna chaiye integer ke liye
+console.log(ascNum)
