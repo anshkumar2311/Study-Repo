@@ -81,3 +81,4 @@ const num = [25,63,12,98,65,45,50,69,36,2,6]
 const lenNum = num.length
 const ascNum = num.slice().sort((a,b)=>a-b)   //slice use kr rhe hai num ko ascNum mai duplicate copy krne ke liye     sort agar ham sort() khali use krte hai to vo normal sort krte hai [10,3,2] => [10,2,3] yeh hoga yeh hme string mai islia hme sort((a,b)=>a-b) use krna chaiye integer ke liye
 console.log(ascNum)
+KO

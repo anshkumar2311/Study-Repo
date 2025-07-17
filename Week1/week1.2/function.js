@@ -37,25 +37,6 @@
 
 
 //Q3 Normal calculate Arithmetic with 3 arguments named type 
-// function calArith(a,b,type){
-//   if (type == "sum"){
-//     const value = sum(a,b);
-//     console.log(value);
-//   }
-//   if(type == "minus"){
-//     const value = sub(a,b);
-//     console.log(value)
-//   }
-// }
-// function sum(a,b){
-//   return a+b;
-// }
-// function sub(a,b){
-//   return a-b;
-// }
-// const value = calArith(1,6,"sum")
-// console.log(value)
-
 function calArith(a, b, type){
   if (type == "sum"){
     return sum(a, b);
